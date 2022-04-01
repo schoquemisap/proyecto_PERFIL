@@ -1,0 +1,51 @@
+:root {
+    /* COLOCANDO LAS VARIABLES  */
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+
+    /* MODIFICNADO EL "- Font size (name and stats): 18px "*/
+    ---Name-satats-Font-size: 18px;
+}
+/* COLOCANDO LAS TIPOGRAFIAS EXPORTADAS DE GOOGLE EN EL CUERPO */
+html, 
+body {
+    /* formateando el maregn por defecto de la caja principal */
+    margin: 0;
+    box-sizing: border-box;
+    /* ya quedo formateado el margen por defecto  */
+    font-family: "Kumbh Sans", sans-serif;
+    font-family: "Lobster", cursive;
+    font-family: "Roboto", sans-serif;
+    background: var(--Dark-cyan);
+}
+.profile-card{
+    border-radius: 8px;  /* reedondea los bordes*/
+    /*parq ue no ocupe todo el ancho l=hacemos lo siguinte*/
+    width: 85%;
+    margin: auto; /*centreando al medio */
+}
+.profile-card-top{
+    background-image: url(../assets/bg-pattern-card.svg); /*colocando fondo IMG*/
+}
+.profile-card-top img{
+    border-radius: 50%;
+    border: 5px solid white;
+}
+.profile-card-botton__datos-seguidores{
+    display: flex;
+    justify-content: space-evenly; /*Justificado de los 2 bloques de seguidores */
+    border-top: solid var(--Dark-grayish-blue);
+}
+.profile-card-botton__datos-seguidores div p:nth-child(1){
+    font-size: var(---Name-satats-Font-size);
+    font-weight: 700;
+    text-align: center;
+}
+.profile-card-botton__datos-seguidores div p:nth-child(2){
+    font-weight: 400;
+    color: var(--Dark-gray); /* color de la letra*/
+    font-size: 14px;
+    text-align: center;
+}
